@@ -9,16 +9,82 @@
 <body>
 
   <header class="navbar">
-    <span class="brand">ณัทฐิกา ครุยาศรัทธา</span>
+    <a class="brand" href="#top">ณัทฐิกา ครุยาศรัทธา</a>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
     <button id="themeBtn" class="ghost" type="button">Dark</button>
   </header>
 
-  <main class="card">
-    <h1>My Web Development Lab</h1>
-    <p class="meta">ชื่อ: ณัทฐิกา ครุยาศรัทธา | รหัสนิสิต: 67160332</p>
-    <p id="status" class="status">Ready to deploy</p>
-    <button id="helloBtn" class="primary" type="button">Say Hello</button>
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="avatar">ณ</div>
+        <div class="hero-text">
+          <p class="small">สวัสดีค่ะ</p>
+          <h1>ณัทฐิกา ครุยาศรัทธา</h1>
+          <p class="meta">My Web Development Lab | รหัสนิสิต 67160332</p>
+          <p id="status" class="status">Ready to deploy</p>
+          <div class="actions">
+            <button id="helloBtn" class="primary" type="button">Say Hello</button>
+            <a class="outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>สวัสดีค่ะ ฉันชื่อณัทฐิกา สนใจการพัฒนาเว็บไซต์
+          และกำลังเรียนรู้การใช้ Git กับ GitHub Actions
+          เพื่อนำเว็บไซต์ขึ้นออนไลน์แบบอัตโนมัติ</p>
+        <div class="info">
+          <div class="info-item"><span>ชื่อ</span><strong>ณัทฐิกา ครุยาศรัทธา</strong></div>
+          <div class="info-item"><span>รหัสนิสิต</span><strong>67160332</strong></div>
+          <div class="info-item"><span>กำลังเรียนรู้</span><strong>Git / GitHub Pages</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>โครงสร้างหน้าเว็บ</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>ตกแต่งและจัดเลย์เอาต์</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>ทำให้หน้าเว็บโต้ตอบได้</p>
+        </div>
+        <div class="skill-card">
+          <h3>Git &amp; GitHub</h3>
+          <p>จัดการเวอร์ชันและ Deploy</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p><span>Email</span> your@email.com</p>
+        <p><span>GitHub</span> github.com/67160332</p>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <p>© 2026 ณัทฐิกา ครุยาศรัทธา | สร้างด้วย HTML, CSS, JavaScript และ GitHub Pages</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
