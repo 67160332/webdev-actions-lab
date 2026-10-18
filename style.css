@@ -1,27 +1,72 @@
+:root {
+  --bg: #eef4fb;
+  --card: #ffffff;
+  --text: #1c2b3a;
+  --muted: #5b6b7b;
+  --line: #d8e2ee;
+  --accent: #1769aa;
+}
+
+body.dark {
+  --bg: #14181d;
+  --card: #1e242b;
+  --text: #e8eef4;
+  --muted: #a0adba;
+  --line: #313a44;
+  --accent: #4a9fe0;
+}
+
+* { box-sizing: border-box; }
+
 body {
-  font-family: system-ui, sans-serif;
-  background: #eef4fb;
   margin: 0;
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  font-family: system-ui, "Noto Sans Thai", sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand { font-weight: 700; color: var(--accent); }
+
 .card {
-  background: white;
+  max-width: 520px;
+  margin: 80px auto;
   padding: 40px;
+  background: var(--card);
   border-radius: 18px;
-  box-shadow: 0 12px 32px #1e3a5f20;
+  box-shadow: 0 12px 32px rgba(30, 58, 95, 0.12);
   text-align: center;
 }
-button {
-  background: #b6207a;
+
+h1 { margin: 0 0 12px; }
+.meta { color: var(--muted); margin: 0 0 8px; }
+.status { font-weight: 600; margin: 16px 0; }
+
+button { font: inherit; cursor: pointer; border-radius: 8px; }
+
+.primary {
+  background: var(--accent);
   color: white;
   border: 0;
   padding: 12px 22px;
-  border-radius: 8px;
-  cursor: pointer;
 }
-section { margin: 20px 0; }
-ul { list-style: none; padding: 0; }
-body.dark { background: #b053ac; }
-body.dark .card { background: #5687af; color: white; }
+
+.ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+}
+
+@media (max-width: 600px) {
+  .card { margin: 40px 16px; padding: 28px; }
+}
