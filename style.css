@@ -21,3 +21,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+section { margin: 20px 0; }
+ul { list-style: none; padding: 0; }
+body.dark { background: #b053ac; }
+body.dark .card { background: #5687af; color: white; }
